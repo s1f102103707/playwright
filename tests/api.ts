@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const [turnRole, setTurnRole] = useState(1);
 const apiEndpoint = 'https://api.openai.com/v1/chat/completions';
-const apiKey = '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'; // あなたの実際のAPIキーを設定してください
+const apiKey = 'APIKEY'; // あなたの実際のAPIキーを設定してください
 const inputData = {
   model: 'gpt-3.5-turbo',
   messages: [
