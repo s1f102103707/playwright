@@ -1,9 +1,7 @@
 import axios from 'axios';
-import { exportMessage } from './api.ts';
-console.log(exportMessage);
 const message = require('./api.ts');
 const apiEndpoint = 'https://api.openai.com/v1/chat/completions';
-const apiKey = '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'; // あなたの実際のAPIキーを設定してください
+const apiKey = 'APIKEY'; // あなたの実際のAPIキーを設定してください
 const inputData = {
   model: 'gpt-3.5-turbo',
   messages: [
@@ -32,4 +30,3 @@ axios.post(apiEndpoint, inputData, {
   .catch((error) => {
     console.error('Error:', error.message);
   });
-  console.log(responseMessage);
